@@ -1,0 +1,382 @@
+*{
+    font-family: 'Play', sans-serif;
+}
+nav{
+    background-color: #ADB4C6;
+}
+.nav-scroll{
+    box-shadow: 0 3px 6px #00000029;
+}
+header{
+    background-color: #ADB4C6;
+}
+#bg{
+    background-image: url(./../images/slide03.png);
+    background-size: cover;
+    margin-top: 82px;
+    width: 100%;
+    height: calc(100vh - 82px);
+}
+@media screen and (max-width:1024px) {
+    #home #bg{
+        background-position: right;
+    }
+}
+.title{
+    color: #2463c3;
+    font-weight: bold;
+}
+#home button{
+    background-color: #2463c3;
+    color: white;
+}
+#home button:hover{
+    background-color: #2F9ABD;
+}
+#home ul{
+    padding: 0;
+}
+#home li{
+    list-style: none;
+    display: inline-block;
+    padding-right: 15px;
+    font-size: 1.5rem;
+}
+#home li a{
+    text-decoration: none;
+    color: white;
+    transition: all 0.5s;
+}
+#home li a:hover{
+    color: #2F9ABD;
+}
+.info-section .info-content{
+    margin: 100px;
+    
+    overflow: auto;
+}
+.info-section .info-img{
+    float: left;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    margin-right: 100px;
+
+}
+.info-section .info-content img{
+    border-radius: 10px;
+    background-color: #f1f1f1;
+    height: 550px;
+    z-index: 1;
+    margin-top: 20px;
+    margin-left: 20px;
+    position: relative;
+}
+.info-section .info-content .info-img::after{
+    content: "";
+    position: absolute;
+    top: 0px;
+    bottom: 25px;
+    right: 25px;
+    left: 0px;
+    border: 5px solid #555;
+    border-radius: 10px;
+}
+
+.info-section .info-content .info-img li{
+    display: inline;
+    margin: 0 8px;
+}
+.info-section .info-content .info-img a:hover{
+    color: #2463c3;
+}
+.info-section .info-content a{
+    text-decoration: none;
+    color: white;
+    transition: all 0.5s;
+}
+.info-section .social{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    left: 20px;
+    top: 20px;
+    bottom: 0;
+    right: 0;
+    border-radius: 10px;
+    padding-top: 200px;
+    padding-right: 55px;
+    transform: translateY(100%);
+    transition: all 0.5s ease-out;
+    z-index: 1;
+}
+.info-section .info-content .info-img:hover .social{
+    transform: translateY(0);
+}
+
+.info-txt ul{
+    list-style: outside none none;
+}
+
+.info-txt p{
+    margin: 0 0 15px;
+    padding-bottom: 15px;
+    position: relative;
+    color: #555555;
+    font-size: 24px;
+}
+.line-span{
+    margin-right: 12px;
+}
+.line-span::before{
+    content: "";
+    position: absolute;
+    border-left: 5px solid #2463c3;
+    top: 11px;
+    bottom: 10px;
+}
+.info-txt h2{
+    font-size: 36px;
+    font-weight: 400;
+    color: #333333;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.btns button{
+    color: white;
+    background-color: #2463c3;
+    padding: 10px 24px;
+    border: none;
+    border-radius: 4px;
+    margin-right: 10px;
+    transition: all 0.3s ease-in-out;
+    font-size: 16px;
+}
+.btns i{
+    color: white;
+    margin: 0 10px;
+}
+.btns button:hover{
+    background-color: #2F9ABD;
+    cursor: pointer;
+}
+@media screen and (max-width:1024px) {
+    .info-section .info-img{
+        float: none;
+        margin:auto;
+        margin-bottom: 1rem;
+    }
+    .info-txt .line-span{
+        margin:0
+    }
+    .info-txt .line-span::before{
+        content: "";
+        position: absolute;
+        top: 590px;
+    }
+    #home #bg{
+        background-position: right;
+        max-width: 100%;
+    }
+}
+@media screen and (max-width:769px) {
+    #about .about-title{
+        text-align: center;
+    }
+}
+#services{
+    background-image: url(./../images/Mask-Group-2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.carousel-indicators li{
+    list-style: none;
+}
+#carouselExampleAutoplaying img{
+    height: 650px;
+}
+.depts{
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.depts li{
+    list-style: none;
+    margin: 10px 0;
+}
+.depts button{
+    background-color: #2463c3;
+    color: white;
+}
+.depts button:hover{
+    background-color: #8DC63F;
+    color: white;
+}
+.layer{
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+}
+.surgeries{
+    padding: 20px 0;
+}
+.section-title{
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    margin-bottom: 3rem;
+}
+.section-title h2{
+    color: #dee3e4;
+    opacity: 0.4;
+    font-size: 4.25rem;
+    text-transform: uppercase;
+    width: 100%;
+}
+.section-title p{
+    font-size: 2rem;
+    width: 100%;
+    position: absolute;
+    margin: auto;
+    color: #2463c3;
+}
+.section-title span{
+    border-bottom: 1px solid #dee2e6;
+    border-width: 3px;
+    border-color: #8DC63F;
+    width: 80px;
+    position: absolute;
+    margin: auto;
+    margin-top: 55px;
+}
+.surgeries h5{
+    color: #555;
+    margin: 15px 0;
+}
+.stats{
+    background-image: url(./../images/Mask-Group-4.png);
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+    padding: 8rem 0;
+}
+.stats .layer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: .7;
+}
+.counter-icon{
+    height: 60px;
+    width: 60px;
+    line-height: 1.8;
+    box-shadow: 0 0 0 10px #cde1f8;
+    font-size: 2rem;
+    border-radius: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+.counter-num{
+    font-size: 2rem;
+    margin: 0;
+}
+.counter-item{
+    position: relative;
+    color: white;
+    margin-bottom: 1.8rem;
+}
+.services-txt{
+    color: #666;
+}
+#carouselExampleSlidesOnly img{
+    box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.5);
+}
+#d-services .carousel-control-next, #d-services .carousel-control-prev{
+    position: relative;
+    display: inline-block;
+    background-color: #2463c3;
+}
+.examination{
+    background-color: #8DC63F;
+    color: white;
+}
+.examination:hover{
+    background-color: #8DC60F;
+    color: white;
+}
+.follow-up{
+    background-color: #2463c3;
+    color: white;
+}
+.follow-up:hover{
+    background-color: #2F9ABD;
+    color: white;
+}
+#testmonial{
+    background-color: #f3f3f3;
+}
+#testmonial img{
+    height: 8rem;
+    width: 8rem;
+}
+.client-review{
+    font-size: 20px;
+    line-height: 1.5em;
+    color: #666;
+    width: 70%;
+    margin: auto;
+}
+.client-review span{
+    font-size: 20px;
+    line-height: 1.5em;
+    color: #666;
+}
+#testmonial .carousel-indicators button{
+    background-color: #8DC63F;
+}
+#testmonial i{
+    color: #2463c3;
+}
+#contact{
+    color: #555;
+}
+#contact h4{
+    color: #2463c3;
+}
+#contact i{
+    color: #8DC63F;
+    font-size: 1.25rem;
+    margin-right: 1rem;
+    
+}
+#contact .social a{
+    text-decoration: none;
+    color: #8DC63F;
+    transition: all 0.5s;
+}
+#contact .social a:hover{
+    color: #2463c3;
+}
+#contact .social li{
+    list-style: none;
+    display: inline-block;
+    font-size: 1.4rem;
+    margin-right: 10px;
+}
+.nav-link{
+    color: white;
+    transition: all 0.5s;
+}
+.nav-link:hover{
+    color: #2F9ABD;
+}
+.navbar-nav>.active>span{
+    color: #2463c3;
+}
