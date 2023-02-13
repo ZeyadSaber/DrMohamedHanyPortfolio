@@ -174,7 +174,9 @@ header{
         max-width: 100%;
     }
     #home .container .bg{
-        background-position: right;
+        background-image: url(./../images/slide03@2x.jpg);
+        background-size: cover;
+        height: 1000px;
     }
     .info-section .info-content .info-img::after{
         content: "";
