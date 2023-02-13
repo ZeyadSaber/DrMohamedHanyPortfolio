@@ -10,17 +10,12 @@ nav{
 header{
     background-color: #ADB4C6;
 }
-#bg{
+#home .container .bg{
     background-image: url(./../images/slide03.png);
     background-size: cover;
     margin-top: 82px;
     width: 100%;
     height: calc(100vh - 82px);
-}
-@media screen and (max-width:1024px) {
-    #home #bg{
-        background-position: right;
-    }
 }
 .title{
     color: #2463c3;
@@ -174,9 +169,12 @@ header{
         position: absolute;
         top: 590px;
     }
-    #home #bg{
-        background-position: right;
+
+    #home .container{
         max-width: 100%;
+    }
+    #home .container .bg{
+        background-position: right;
     }
     .info-section .info-content .info-img::after{
         content: "";
@@ -206,11 +204,6 @@ header{
 @media screen and (max-width:769px) {
     #about .about-title{
         text-align: center;
-    }
-    #home #bg{
-        background-image: url(./../images/slide03@2x.jpg);
-        background-position: center center;
-        background-size: cover;
     }
 }
 #services{
